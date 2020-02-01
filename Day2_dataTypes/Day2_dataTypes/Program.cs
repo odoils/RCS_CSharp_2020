@@ -6,24 +6,25 @@ namespace Day2_dataTypes
     {
         static void Main(string[] args)
         {
-            //cielveks ievada skaitli
-            //parbaudam vai ir lielaks par pieci
-            //ja ir ##
-            //ja nav #
+            //sameklet ka parbaudit divus nosacijumus
+            //un parbaudit vai cilveks ievada pareiza garuma String
+            //un vai sis String ir vienads ar "aaaaaaaa"
 
-            Console.WriteLine("Ievadiet skaitli");
-            String ievade = Console.ReadLine();
-            int skaitlis = Convert.ToInt32(ievade);
-
+            Console.WriteLine("Ievadiet simbolus");
+            String garums = Console.ReadLine();
             
-            if (skaitlis > 5)
+
+            if(garums.Length >= 8 && garums == "aaaaaaaa")
             {
-                Console.WriteLine("##");
+                Console.WriteLine("viss OK");
             }
             else
             {
-                Console.WriteLine("#");
+                Console.WriteLine("Nav OK");
             }
+            
+
+
 
 
         }
@@ -69,6 +70,8 @@ namespace Day2_dataTypes
 
             String piem = "aaa";
             if (piem == "aaa") ;// var salidzinat ari string  ir vienads vai nav
+
+            // Stinga garuma merisana - int c = piem.Length;
         }
 
 
@@ -93,6 +96,24 @@ namespace Day2_dataTypes
             int vecums = gads - gads2;
             Console.WriteLine("Jusu vevums ir " + vecums);
         }
+        static void uzdevums2()
+        {
+            //cielveks ievada skaitli
+            //parbaudam vai ir lielaks par pieci
+            //ja ir ##
+            //ja nav #
 
+            Console.WriteLine("Ievadiet skaitli");
+            String ievade = Console.ReadLine();
+            int skaitlis = Convert.ToInt32(ievade);
+            if (skaitlis > 5)
+            {
+                Console.WriteLine("##");
+            }
+            else
+            {
+                Console.WriteLine("#");
+            }
+        }
     }
 }
