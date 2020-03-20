@@ -16,6 +16,11 @@ namespace Day16FileOpen
         {
             InitializeComponent();
         }
+        //Stringu lists
+        //Pievienot jaunu saraksta elementu
+        //Cilveks teksta lauka
+        //mes sadu elementu pievienojam listView
+
         private void BtnAddList_Click(object sender, EventArgs e)
         {
             List<String> testList = new List<String>();
@@ -31,22 +36,18 @@ namespace Day16FileOpen
                 item.Text = str;
                 TestListView.Items.Add(item);
             }
-        }
-    }
-    //Stringu lists
-    //Pievienot jaunu saraksta elementu
-    //Cilveks teksta lauka
-    //mes sadu elementu pievienojam listView
-
-    /*private void btnAdd_Click(object sender, EventArgs e)
-    {
-        //bool duplicate = false;
-        if (inputText.Text != "")
+        }        
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (TestListView.FindItemWithText(inputText.Text) == null)
+            //bool duplicate = false;
+            if (inputText.Text != "")
             {
-                TestListView.Items.Add(new ListViewItem(inputText.Text));
+                if (TestListView.FindItemWithText(inputText.Text) == null)
+                {
+                    TestListView.Items.Add(new ListViewItem(inputText.Text));
+                }
             }
         }
-    }*/
+    }
+           
 }
