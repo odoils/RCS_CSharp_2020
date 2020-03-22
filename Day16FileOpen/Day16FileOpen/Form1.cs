@@ -48,6 +48,11 @@ namespace Day16FileOpen
                 }
             }
         }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            ListViewItem item = TestListView.SelectedItems[0];
+            lblOutput.Text = item.Text;
+        }
     }
            
 }
