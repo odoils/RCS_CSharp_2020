@@ -55,6 +55,7 @@
             this.listStudents.Size = new System.Drawing.Size(212, 97);
             this.listStudents.TabIndex = 0;
             this.listStudents.UseCompatibleStateImageBehavior = false;
+            this.listStudents.View = System.Windows.Forms.View.List;
             // 
             // btnAdd
             // 
@@ -64,42 +65,47 @@
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "Pievienot";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(19, 209);
+            this.btnDelete.Location = new System.Drawing.Point(592, 82);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(91, 35);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Dzest";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAddDemoData
             // 
-            this.btnAddDemoData.Location = new System.Drawing.Point(19, 102);
+            this.btnAddDemoData.Location = new System.Drawing.Point(592, 35);
             this.btnAddDemoData.Name = "btnAddDemoData";
             this.btnAddDemoData.Size = new System.Drawing.Size(91, 36);
             this.btnAddDemoData.TabIndex = 3;
             this.btnAddDemoData.Text = "AddDemo";
             this.btnAddDemoData.UseVisualStyleBackColor = true;
+            this.btnAddDemoData.Click += new System.EventHandler(this.btnAddDemoData_Click);
             // 
             // btnLoadFromFile
             // 
-            this.btnLoadFromFile.Location = new System.Drawing.Point(19, 158);
+            this.btnLoadFromFile.Location = new System.Drawing.Point(592, 188);
             this.btnLoadFromFile.Name = "btnLoadFromFile";
             this.btnLoadFromFile.Size = new System.Drawing.Size(91, 30);
             this.btnLoadFromFile.TabIndex = 4;
             this.btnLoadFromFile.Text = "Ielade";
             this.btnLoadFromFile.UseVisualStyleBackColor = true;
+            this.btnLoadFromFile.Click += new System.EventHandler(this.btnLoadFromFile_Click);
             // 
             // btnSaveToFile
             // 
-            this.btnSaveToFile.Location = new System.Drawing.Point(19, 25);
+            this.btnSaveToFile.Location = new System.Drawing.Point(592, 135);
             this.btnSaveToFile.Name = "btnSaveToFile";
             this.btnSaveToFile.Size = new System.Drawing.Size(91, 32);
             this.btnSaveToFile.TabIndex = 5;
             this.btnSaveToFile.Text = "Saglabat";
             this.btnSaveToFile.UseVisualStyleBackColor = true;
+            this.btnSaveToFile.Click += new System.EventHandler(this.btnSaveToFile_Click);
             // 
             // inpName
             // 
@@ -151,12 +157,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnSaveToFile);
             this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Controls.Add(this.btnDelete);
-            this.groupBox1.Controls.Add(this.btnLoadFromFile);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnAddDemoData);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.inpName);
             this.groupBox1.Controls.Add(this.label3);
@@ -167,7 +169,7 @@
             this.groupBox1.Size = new System.Drawing.Size(258, 406);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Jauns students";
             // 
             // openFileDialog1
             // 
@@ -180,16 +182,19 @@
             this.txtMessage.Size = new System.Drawing.Size(212, 182);
             this.txtMessage.TabIndex = 13;
             this.txtMessage.Text = "";
-            this.txtMessage.TextChanged += new System.EventHandler(this.txtMessage_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSaveToFile);
+            this.Controls.Add(this.btnLoadFromFile);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.listStudents);
+            this.Controls.Add(this.btnAddDemoData);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);

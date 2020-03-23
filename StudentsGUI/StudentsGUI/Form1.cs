@@ -236,12 +236,7 @@ namespace StudentsGUI
             txtMessage.Text = errorMessage;
         }
 
-        private void txtMessage_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
+       
         //Izveidot demo sarakstu
         //Iezimeto elementu dzesana
         //Uztaisit cilveks var pievienot sarakstam studentu
