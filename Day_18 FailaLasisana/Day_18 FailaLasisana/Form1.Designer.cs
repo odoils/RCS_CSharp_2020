@@ -38,9 +38,10 @@
             this.listWords.HideSelection = false;
             this.listWords.Location = new System.Drawing.Point(437, 75);
             this.listWords.Name = "listWords";
-            this.listWords.Size = new System.Drawing.Size(121, 97);
+            this.listWords.Size = new System.Drawing.Size(271, 344);
             this.listWords.TabIndex = 0;
             this.listWords.UseCompatibleStateImageBehavior = false;
+            this.listWords.View = System.Windows.Forms.View.List;
             // 
             // btnReadFromFile
             // 
@@ -50,15 +51,15 @@
             this.btnReadFromFile.TabIndex = 1;
             this.btnReadFromFile.Text = "NOLASIT";
             this.btnReadFromFile.UseVisualStyleBackColor = true;
+            this.btnReadFromFile.Click += new System.EventHandler(this.btnReadFromFile_Click);
             // 
             // txtMessage
             // 
             this.txtMessage.Location = new System.Drawing.Point(194, 206);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(100, 96);
+            this.txtMessage.Size = new System.Drawing.Size(154, 150);
             this.txtMessage.TabIndex = 2;
             this.txtMessage.Text = "";
-            this.txtMessage.TextChanged += new System.EventHandler(this.txtMessage_TextChanged);
             // 
             // Form1
             // 
@@ -75,6 +76,8 @@
         }
 
         #endregion
+
+        
 
         private System.Windows.Forms.ListView listWords;
         private System.Windows.Forms.Button btnReadFromFile;
