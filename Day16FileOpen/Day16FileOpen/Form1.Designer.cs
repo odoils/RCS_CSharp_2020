@@ -44,6 +44,7 @@
             this.BtnAddList.TabIndex = 0;
             this.BtnAddList.Text = "izveidot sarakstu";
             this.BtnAddList.UseVisualStyleBackColor = true;
+            this.BtnAddList.Click += new System.EventHandler(this.BtnAddList_Click);
             // 
             // TestListView
             // 
@@ -62,6 +63,7 @@
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Pievienot elementu";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // inputText
             // 
@@ -81,12 +83,13 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(601, 163);
+            this.btnDelete.Location = new System.Drawing.Point(591, 120);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(75, 41);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "dzest";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
