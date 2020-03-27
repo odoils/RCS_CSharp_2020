@@ -6,10 +6,10 @@ namespace Dau_3__2_dala_01._02._20
     {
         static void Main(string[] args)
         {
-            bool a = true;
+            /*bool a = true;
             a = false;
             a = !a;
-            Console.WriteLine(a);
+            Console.WriteLine(a);*/
 
             //Cilveks ievada skaitli
             //Uztaisam metodi kas atgriez (return) vai skaitlis ir pozitivs vai negativs
@@ -18,20 +18,34 @@ namespace Dau_3__2_dala_01._02._20
             String ievade1 = Console.ReadLine();
             int sk1 = Convert.ToInt32(ievade1);
 
-            Console.WriteLine(metode(sk1));
+            if (sk1 > 0)
+            {
+                Console.WriteLine( "Skaitlis ir pozitivs");
+            }
+            else if (sk1 == 0)
+            {
+                Console.WriteLine("Skaitlis ir nulle");
+            }
+            else
+            {
+                Console.WriteLine("Skaitlis ir negativs");
+            }
         }
 
-        static bool metode(int a) 
+        static void metode(int a) 
         {
             if (a > 0)
             {
-                return true;
+                Console.WriteLine();
+            }
+            else if (a==0)
+            {
+                Console.WriteLine();
             }
             else 
             {
-                return false;
+                Console.WriteLine();
             }
-
             
 
         }
