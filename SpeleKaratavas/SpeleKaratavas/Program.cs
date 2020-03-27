@@ -44,7 +44,7 @@ namespace SpeleKaratavas
 
                 Console.WriteLine(rezultats);
 
-                Console.WriteLine("Kludas " + kluda + "/" + maxKluda);
+                Console.WriteLine("Pielautas " + kluda + " kludas no " + maxKluda);
 
             } while (kluda < maxKluda && izdevas < vards.Length);
 
@@ -54,7 +54,7 @@ namespace SpeleKaratavas
             }
             else
             {
-                Console.WriteLine("Diemzel Tev neizdevas uzminet");
+                Console.WriteLine("Diemzel Tev neizdevas uzminet vardu");
             }
         }
     }    
